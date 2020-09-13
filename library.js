@@ -17,10 +17,11 @@ class Library {
   
     printInventory() {
       this.books.forEach((book) => {
-        const { title, author } = book;
+        const title = book.title;
+        const author = book.author;
         console.log(`${title} by ${author}`);
       });
     }
   }
   
-  export { Library };
+  export default Library;
